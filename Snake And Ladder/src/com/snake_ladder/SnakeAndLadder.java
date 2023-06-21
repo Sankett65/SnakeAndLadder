@@ -22,8 +22,7 @@ public class SnakeAndLadder {
             USER=USER+deice;
             System.out.println("Current score of user is: " + USER);
 
-            if (USER==100 )
-                break;
+            
 
             if (check==0 ){
                 System.out.println("You got nothing you can continue");
@@ -34,7 +33,7 @@ public class SnakeAndLadder {
                     System.out.println("You have got a Ladder and you have to increase you score by "+deice + " and play again");
                     USER=USER+deice;
                     System.out.println("Current score of is "+USER);
-                    continue;
+                    
 
                 } else  {
                     System.out.println("You have got a Snake and you have to increase you score by "+deice);
