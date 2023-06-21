@@ -10,11 +10,8 @@ public class SnakeAndLadder {
         System.out.println("Welcome to Snake And Ladder Game");
         Random r = new Random();
         Random c = new Random();
-        int count =1;
+        
 
-        for (int i = 0; i < 35; i++) {
-            if (USER == 100)
-                break;
             int deice = r.nextInt(1, 7);
             int check = c.nextInt(3);
            
@@ -45,7 +42,7 @@ public class SnakeAndLadder {
                     System.out.println("Current score of is "+USER);
 
                 }
-            }
+            
         if (count>=35 && USER<TARGET){
             System.out.println("\nComputer has Won the game");
         }else {
