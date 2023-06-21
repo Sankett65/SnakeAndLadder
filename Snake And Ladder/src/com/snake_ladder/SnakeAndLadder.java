@@ -16,7 +16,7 @@ public class SnakeAndLadder {
             int check = c.nextInt(3);
            
             System.out.println("\nScore : " +USER);
-             count++;
+             
 
             System.out.println("Rolling the deice " + deice);
             USER=USER+deice;
@@ -43,14 +43,14 @@ public class SnakeAndLadder {
 
                 }
             
-        if (count>=35 && USER<TARGET){
+        if ( USER<TARGET){
             System.out.println("\nComputer has Won the game");
         }else {
             System.out.println("\nYOU HAVE WON!!!" );
         }
 
         System.out.println("\nThe score of s: " + USER);
-        System.out.println("try taking  "+count);
+       
 
         }
     }
