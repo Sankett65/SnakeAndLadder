@@ -17,7 +17,16 @@ public class SnakeAndLadder {
                 break;
             int deice = r.nextInt(1, 7);
             int check = c.nextInt(3);
+            if (USER==TARGET) {
+                USER=USER;
+                break;
+            }else if (USER>TARGET){
+                USER=USER-deice;
+                continue;
+            } else if (USER==99) {
+                deice=1;
 
+            }
             System.out.println("\nScore : " +USER);
 
 
@@ -46,14 +55,14 @@ public class SnakeAndLadder {
 
                 }
             }
-        if ( USER<TARGET){
+        if (USER<TARGET){
             System.out.println("\nComputer has Won the game");
         }else {
             System.out.println("\nYOU HAVE WON!!!" );
         }
 
         System.out.println("\nThe score of s: " + USER);
-        
+       
 
         }
     }
